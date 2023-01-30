@@ -5,7 +5,18 @@ static string[] CreateArray(int args)
         return new string[args];
     }
 
+// Печать массива строк
+    static void PrintArray(string[] array)
+    {
 
+        int size = array.Length;
+        for (int i = 0; i < size; i++)
+        {
+            Console.WriteLine(array[i]);
+            
+        }
+
+    }
 
 
 
