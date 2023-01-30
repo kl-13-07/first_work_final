@@ -1,48 +1,44 @@
 ﻿
-
-
-
-
-string [] M = {"rsat", "lsat", "1"};
-
-
-if (M[2].Length<= 3)
-
-Console.WriteLine (M[2]);
-
-else Console.Write("длина больше");
+// Создание массива строк
+static string[] CreateArray(int args)
+    {
+        return new string[args];
+    }
 
 
 
 
 
 
+string [] M = {"rsat", "ls", "1", "112", "1л11"};
+string [] N = CreateArray (M.Length);
+
+int index = 0;
+
+for (int i = 0; i < M.Length; i++)
+{
+if (M[i].Length <= 3)
+
+
+N[index] = M[i];
+index++;
+
+}
+
+
+PrintArray (N);
 
 
 
 
-/* string [] M = {"rsat", "lsat", "1"};
 
 
-if (M[2].Length<= 3)
-
-Console.WriteLine (M[2]);
-
-else Console.Write("длина больше"); */
 
 
-/* string M  = "па'5";
 
-if (M.Length<= 3)
 
-Console.WriteLine (M);
 
-else Console.Write("длина больше"); */
 
-/* if ( M [0] > 2)
 
-Console.WriteLine(M [0]); */
-
- //int A = string. 
 
 
